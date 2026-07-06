@@ -659,7 +659,7 @@
   <section id="projects">
     <div class="section-inner">
       <div class="section-tag" style="display:block;text-align:center;margin-bottom:16px;">Featured Work</div>
-      <p class="section-subtitle">A showcase of my recent assignments demonstrating expertise in frontend development, modern frameworks, and creative problem-solving.</p>
+      <p class="section-subtitle">A showcase of my recent projects demonstrating expertise in frontend development, modern frameworks, and creative problem-solving.</p>
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-preview"><i class="fas fa-file-alt"></i></div>
@@ -768,7 +768,7 @@
       <div class="contact-grid">
         <div class="contact-info">
           <h3>Let's Collaborate!</h3>
-          <p>I am always open to discussing exciting projects and new opportunities. Feel free to reach out anytime!</p>
+          <p>I am always open to discussing exciting assignments and new opportunities. Feel free to reach out anytime!</p>
           <div class="contact-items">
             <div class="contact-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
@@ -790,16 +790,19 @@
           </div>
         </div>
         <div class="contact-form-wrap">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="4878b9e6-1641-49bb-89d0-ee99b5e2b9b6">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name"/>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required/>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Your Email"/>
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
           </div>
-          <button class="btn-send">Send Message</button>
+          <button type="submit" class="btn-send">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
